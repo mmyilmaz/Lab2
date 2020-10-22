@@ -1,0 +1,29 @@
+package lab2;
+
+import java.util.Scanner;
+
+public class Q6AmoutOfPurchase {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Pls enter amount of purchase:");
+		double amountOfPurchase=scan.nextDouble();
+		calculatePurchase(amountOfPurchase);
+		
+	}
+	public static double calculatePurchase(double amountOfPurchase) {
+	double stateSalesTax=amountOfPurchase*0.04;
+	double countrySalesTax=amountOfPurchase*0.02;
+	double totalSalesTax=stateSalesTax+countrySalesTax;
+	double totalOfSale=totalSalesTax+amountOfPurchase;
+	System.out.println("Country sales tax: "+countrySalesTax+" ,State sales tax: "+stateSalesTax+", total sales tax: "+totalSalesTax+" and Total amount: "+totalOfSale);
+	return amountOfPurchase;
+}
+}	
+/*
+Question-6
+
+Write a program that will ask the user to enter the amount of a purchase. 
+The program should then compute the state and county tax sales tax. Assume the state sales tax is 4 percent and the county sales tax is 2 percent. The program should display the amount of the purchase , the state sales tax, the county sales tax, the total sales tax, and the total of the sale
+ (which is the sum of the amount of purchase plus the total sales tax)
+ */
