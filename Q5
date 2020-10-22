@@ -1,0 +1,24 @@
+package lab2;
+
+import java.util.Scanner;
+
+public class Q5MealCharge {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the charge for the meal:");
+		double charge=scan.nextDouble();
+		todaysBill(charge);
+		
+	}
+	public static double todaysBill(double charge) {
+		
+		double tax=charge*0.0675;
+		double tip=(charge+tax)/5;
+		double totalBill=charge+tip+tax;
+		System.out.println("Charge: "+charge+", Tax: "+tax+", Tip: "+tip+" and total bill: "+totalBill);
+		return charge;
+	}
+
+}
