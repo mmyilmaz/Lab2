@@ -1,0 +1,25 @@
+package lab2;
+
+import java.util.Scanner;
+
+public class Q4_NumberofMales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		percentage(80,20);
+	}
+		public static double percentage(double males, double females) {
+			double total=males+females;
+			double malesPer=males/total*100;
+			double femalesPer=females/total*100;
+			System.out.println("percantage of males is: "+malesPer +" and the percentage of females is: "+femalesPer );
+			return total;
+		}
+}
+
+/*
+Question-4
+
+Write a program that asks user for the number of males and the number of females registered in a class. 
+The program should display the percentage of males and females in the class.
+*/
